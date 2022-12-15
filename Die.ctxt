@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Die
+comment1.params=max
+comment1.target=Die(int)
+comment2.params=
+comment2.target=int\ Roll()
+comment3.params=
+comment3.target=int\ rollRn()
+numComments=4
