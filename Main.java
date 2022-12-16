@@ -16,14 +16,25 @@ public class Main{
 
         while (!gameOver){
             for(int i = 0; i<playerNum; i++){
-                System.out.println(Players[i].toString() + "'s turn.");
-                System.out.println(Players[i].toString() + "'s board: "+ Players[i].printBoard());
-                Players[i].takeTurn();
-                System.out.println(Players[i].toString() + "'s board now: "+ Players[i].printBoard());
-                if (Players[i].backDownTF()&&Players[i].posGameboard()==0){
+                if (Players[i].backDownTF()){
+                    System.out.println(Players[i].Name() + "'s turn." + " They are going down their board.");
+                    System.out.println();
+                }
+                if (!Players[i].backDownTF()){
+                    System.out.println(Players[i].Name() + "'s turn." + " They are going up their board.");
+                    System.out.println();
+                }
+                System.out.println(Players[i].Name() + "'s board: "+ Players[i].printBoard());
+                System.out.println();
+                Players[i].simulateGame();
+                System.out.println(Players[i].Name() + "'s board now: "+ Players[i].printBoard());
+                System.out.println();
+                if (Players[i].backDownTF()&&Players[i].boardi(0) == false){
                     gameOver=true;
                     Players[i].addWin();
-                    System.out.println(Players[i].toString()+" won!");
+                    System.out.println(Players[i].Name()+" won!");
+                    System.out.println();
+                    Players[i].displayWins();
                     break;
                 }
             }

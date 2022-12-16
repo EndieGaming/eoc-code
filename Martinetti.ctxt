@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Martinetti
+comment1.params=
+comment1.target=Martinetti()
+comment2.params=i
+comment2.target=boolean\ boardi(int)
+comment3.params=
+comment3.target=void\ restartGame()
+comment4.params=
+comment4.target=int\ posGameboard()
+comment5.params=
+comment5.target=boolean\ backDownTF()
+comment6.params=player\ roll1\ roll2\ roll3
+comment6.target=void\ simulateGame(Player,\ int,\ int,\ int)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

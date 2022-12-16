@@ -5,5 +5,5 @@ comment1.target=Die(int)
 comment2.params=
 comment2.target=int\ Roll()
 comment3.params=
-comment3.target=int\ rollRn()
+comment3.target=java.lang.String\ toString()
 numComments=4
